@@ -1,24 +1,59 @@
 # README
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+## usersテーブル
 
-Things you may want to cover:
+| Column              | Type       | Options                   |
+| ------------------- | ---------- | ------------------------- |
+| name                | string     | null: false               |
+| email               | string     | null: false, unique: true |
+| encrypted_password  | string     | null: false               |
+| family_name         | string     | null: false               |
+| last_name           | string     | null: false               |
+| family_name_kana    | string     | null: false               |
+| last_name_kana      | string     | null: false               |
+| birthday            | date       | null: false               |
 
-* Ruby version
+### Association
+- has_many :weights
+- has_many :meals
+- has_many :trainings
 
-* System dependencies
 
-* Configuration
+## weightsテーブル
 
-* Database creation
+| Column  | Type       | Options                        |
+| ------- | ---------- | ------------------------------ |
+| user    | references | null: false, foreign_key: true |
+| weight  | integer    | null: false                    |
+| date    | date       | null: false                    |
 
-* Database initialization
 
-* How to run the test suite
+### Association
+- belongs_to :user
 
-* Services (job queues, cache servers, search engines, etc.)
 
-* Deployment instructions
+## mealsテーブル 
 
-* ...
+| Column        | Type       | Options                        |
+| ------------- | ---------- | ------------------------------ |
+| user          | references | null: false, foreign_key: true |
+| date          | date       | null: false                    |
+| description   | text       |                                |
+
+### Association
+- belongs_to :user
+
+## usersテーブル
+
+| Column       | Type       | Options                        |
+| ------       | ---------- | ------------------------------ |
+| menu1_id     | integer    | null: false, foreign_key: true |
+| menu2_id     | integer    |                                |
+| menu3_id     | integer    |                                |
+| menu4_id     | integer    |                                |
+| menu5_id     | integer    |                                |
+| description  | text       |                                |
+
+
+### Association
+- belongs_to :user
