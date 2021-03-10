@@ -1,0 +1,43 @@
+<%= render "shared/header" %>
+<div class='main'>
+  <%# 画面上部のアプリ名部分 %>
+  <div class='title-contents'>
+    <h2 class='service-title'>
+      BODY MAINTENANCE
+    </h2>
+  </div>
+  <%# /画面上部のアプリ名部分  %>
+
+  <%# 3つの機能へのリンク %>
+  <div class='select-contents'>
+    <h2 class='title'>
+      MENU
+    </h2>
+    <ul class='contents-lists'>
+
+      <li class='list'>
+        <%= image_tag 'record.jpg', alt: 'テスト画像', class:"list-pict" %>
+        <h2 class='contents-list-text'>
+          体重の推移
+        </h2>
+      </li>
+
+      <li class='list'>
+        <%= image_tag "meal.jpg", class:"list-pict" %>
+        <h2 class='contents-list-text'>
+          食事記録
+        </h2>
+      </li>
+      
+      <li class='list'>
+        <%= image_tag "training.jpg", class:"list-pict" %>
+        <h2 class='contents-list-text'>
+         トレーニング記録
+        </h2>
+      </li>
+
+    </ul>
+  </div>
+  <%# ３つの機能へのリンク %>
+  
+<%= render "shared/footer" %>
