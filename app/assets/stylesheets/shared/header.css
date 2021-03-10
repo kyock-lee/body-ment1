@@ -1,0 +1,60 @@
+* {
+  box-sizing: border-box;
+}
+
+.top-page-header {
+  width: 100vw;
+  padding: 2vh 15vw 2vh 10vw;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.header-name {
+  font-size: 20px;
+  width: 300px;
+  justify-content: space-between;
+  align-items: center;
+  color: #FAFAFA;
+  font-weight: bold;
+  list-style: none;
+}
+
+
+.nav {
+  font-size: 20px;
+  display: flex;
+  flex-wrap: wrap;
+  width: 80vw - 300px;
+}
+
+.lists-right {
+  display: flex;
+  list-style: none;
+}
+
+
+.user-nickname {
+  text-decoration: none;
+  margin-right: 3vw;
+  color: #333333;
+  font-weight: bold;
+}
+
+
+.logout {
+  text-decoration: none;
+  color: #333333;
+}
+
+.login {
+  text-decoration: none;
+  line-height: 32px;
+  margin-right: 3vw;
+  color: #333333;
+}
+
+.sign-up {
+  text-decoration: none;
+  color: #333333;
+}
