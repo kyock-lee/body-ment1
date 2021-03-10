@@ -1,0 +1,75 @@
+/* サービス名部分 */
+.title-contents {
+  width: 100vw;
+  height: 400px;
+  background-image: url("../background_image2.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: top center;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  padding: 5vh 15vw;
+  color: #fff;
+  text-shadow: 0 0 5px rgba(0, 0, 0, 0.9);
+}
+
+.service-title {
+  font-size: 8vh;
+}
+
+/* //サービス名部分 */
+
+/* コンテンツ部分 */
+
+.select-contents {
+  padding: 5vh 15vw;
+}
+
+.select-contents>.title {
+  text-align: center;
+  font-size: 3.5vh;
+  font-weight: bold;
+  margin-bottom: 5vh;
+  position: relative;
+}
+
+.select-contents>.title::after {
+  content: '';
+  width: 70px;
+  height: 4px;
+  background-color: black;
+  position: absolute;
+  bottom: -10px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.contents-lists {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.contents-lists>.list {
+  width: 33vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+}
+
+.list-pict {
+  margin: 20px;
+  width: 100%;
+  border: 5px solid black;
+  border-radius: 20px;
+}
+
+.contents-list-text {
+  font-weight: bold;
+}
+
+/* //コンテンツ部分 */
+
